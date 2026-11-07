@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subnet Mask ke Wildcard Mask</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Subnet Mask → Wildcard Mask</h1>
+  <p class="sub">Untuk ACL dan routing (OSPF, EIGRP) di Cisco Packet Tracer.</p>
+
+  <div class="card">
+    <label for="mask">Subnet mask <span class="hint">contoh: 255.255.255.0, /24, atau 24</span></label>
+    <input id="mask" autocomplete="off" placeholder="255.255.255.0" autofocus>
+
+    <label for="ip">Alamat network <span class="hint">opsional, untuk membuat perintah Cisco</span></label>
+    <input id="ip" autocomplete="off" placeholder="192.168.1.0">
+
+    <p class="error" id="error" aria-live="polite"></p>
+  </div>
+
+  <div class="card hidden" id="result">
+    <table>
+      <tr><th>Subnet mask</th><td id="r-mask"></td></tr>
+      <tr><th>Prefix</th><td id="r-prefix"></td></tr>
+      <tr><th>Wildcard mask</th><td class="big" id="r-wild"></td></tr>
+      <tr><th>Jumlah host</th><td id="r-hosts"></td></tr>
+    </table>
+  </div>
+
+  <div class="card hidden" id="commands">
+    <h2>Perintah Cisco</h2>
+    <div id="cmd-list"></div>
+    <p class="warn hidden" id="host-warn"></p>
+  </div>
+
+  <div class="card">
+    <h2>Tabel referensi <span class="hint">klik baris untuk memakai</span></h2>
+    <table class="ref">
+      <thead><tr><th>Prefix</th><th>Subnet mask</th><th>Wildcard</th></tr></thead>
+      <tbody id="ref"></tbody>
+    </table>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

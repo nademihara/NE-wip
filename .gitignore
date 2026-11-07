@@ -1,0 +1,7 @@
+# HAPUS atau JANGAN MASUKKAN baris di bawah ini jika ingin men-track keduanya:
+*.md
+CLAUDE.md
+agents.md
+.agents2
+.claude
+.agents

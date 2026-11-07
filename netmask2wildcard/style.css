@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f5f7;
+  color: #1f2328;
+}
+
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 4px; }
+h2 { font-size: 1rem; margin: 0 0 12px; }
+p.sub { margin-top: 0; color: #59636e; }
+
+.card {
+  background: #fff;
+  border: 1px solid #d1d9e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+label { display: block; font-weight: 600; margin-bottom: 6px; }
+.hint { font-weight: 400; color: #59636e; font-size: 0.875rem; }
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-family: ui-monospace, monospace;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+input:focus { outline: 2px solid #0969da; border-color: #0969da; }
+
+.error { color: #d1242f; min-height: 1.25em; margin: 0; }
+.warn { color: #9a6700; margin: 8px 0 0; }
+
+table { width: 100%; border-collapse: collapse; }
+td, th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #eef0f2;
+  font-family: ui-monospace, monospace;
+}
+th { font-family: system-ui, sans-serif; color: #59636e; font-weight: 600; }
+td.big { font-size: 1.25rem; font-weight: 700; color: #0969da; }
+
+pre {
+  background: #1f2328;
+  color: #e6edf3;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 0 0 8px;
+}
+
+.cmd { position: relative; }
+.cmd button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 4px;
+  background: #3d444d;
+  color: #fff;
+  cursor: pointer;
+}
+.cmd button:hover { background: #59636e; }
+.cmd button:active { background: #1f2328; }
+.cmd button:focus-visible { outline: 2px solid #4493f8; outline-offset: 2px; }
+
+.ref td, .ref th { padding: 4px 8px; font-size: 0.875rem; }
+.ref tbody tr { cursor: pointer; }
+.ref tbody tr:hover { background: #f6f8fa; }
+.ref button {
+  font: inherit;
+  color: #0969da;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.ref button:hover { text-decoration: underline; }
+.ref button:active { color: #0550ae; }
+.ref button:focus-visible { outline: 2px solid #0969da; outline-offset: 2px; border-radius: 2px; }
+
+.hidden { display: none; }
