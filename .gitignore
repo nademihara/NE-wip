@@ -1,7 +1,13 @@
-# HAPUS atau JANGAN MASUKKAN baris di bawah ini jika ingin men-track keduanya:
-*.md
-CLAUDE.md
-agents.md
-.agents2
-.claude
-.agents
+
+/AGENTS.md
+/CLAUDE.md
+/agents.md
+/.agents
+/.agents2
+/.claude
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/

@@ -13,6 +13,11 @@ main {
   padding: 0 16px;
 }
 
+a.back { color: #0969da; font-size: 0.875rem; text-decoration: none; }
+a.back:hover { text-decoration: underline; }
+a.back:active { color: #0550ae; }
+a.back:focus-visible { outline: 2px solid #0969da; outline-offset: 2px; }
+
 h1 { font-size: 1.5rem; margin-bottom: 4px; }
 h2 { font-size: 1rem; margin: 0 0 12px; }
 p.sub { margin-top: 0; color: #59636e; }
@@ -78,6 +83,7 @@ pre {
 .cmd button:active { background: #1f2328; }
 .cmd button:focus-visible { outline: 2px solid #4493f8; outline-offset: 2px; }
 
+.scroll { overflow-x: auto; }
 .ref td, .ref th { padding: 4px 8px; font-size: 0.875rem; }
 .ref tbody tr { cursor: pointer; }
 .ref tbody tr:hover { background: #f6f8fa; }
@@ -93,4 +99,20 @@ pre {
 .ref button:active { color: #0550ae; }
 .ref button:focus-visible { outline: 2px solid #0969da; outline-offset: 2px; border-radius: 2px; }
 
-.hidden { display: none; }
+
+.tools { list-style: none; margin: 0; padding: 0; }
+.tools li + li { margin-top: 12px; }
+a.tool {
+  display: block;
+  background: #fff;
+  border: 1px solid #d1d9e0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: inherit;
+  text-decoration: none;
+}
+a.tool:hover { border-color: #0969da; }
+a.tool:active { background: #f6f8fa; }
+a.tool:focus-visible { outline: 2px solid #0969da; outline-offset: 2px; }
+.tool .name { display: block; font-weight: 600; color: #0969da; margin-bottom: 4px; }
+.tool .desc { color: #59636e; font-size: 0.875rem; }
